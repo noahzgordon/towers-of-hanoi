@@ -12,32 +12,36 @@
 
     <ul class="container group">
       <ul class="stack group" data-id="0">
-        <li class="lil_disc"></li>
-        <li class="med_disc"></li>
-        <li class="big_disc"></li>
+        <li class="lil_disc" id="pos0-2"></li>
+        <li class="med_disc" id="pos0-1"></li>
+        <li class="big_disc" id="pos0-0"></li>
       </ul>
 
       <ul class="stack group" data-id="1">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li id="pos1-2"></li>
+        <li id="pos1-1"></li>
+        <li id="pos1-0"></li>
       </ul>
 
       <ul class="stack group" data-id="2">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li id="pos2-2"></li>
+        <li id="pos2-1"></li>
+        <li id="pos2-0"></li>
       </ul>
     </ul>
+
+    <p id="win_indicator"></p>
 
 
     <script src="vendor/jquery-2.1.1.js"></script>
     <script src="hanoi.js"></script>
     <script src="hanoi_ui.js"></script>
-    <script src=""></script>
+    <script src="click_handler.js"></script>
 
 
     <script>
+      var game = new Hanoi.Game;
+      $(clickHandler);
     </script>
   </body>
 </html>
